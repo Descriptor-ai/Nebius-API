@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "nebius-api"
+version = "0.1.0"
+description = ""
+authors = ["Alexey Dubrov <alexey.dubrov@descriptor.ai>"]
+readme = "README.md"
+packages = [{ include = "yandex*", from = "generated" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+protobuf = ">=v3.20.0"
+
+[tool.poetry.group.dev.dependencies]
+grpcio-tools = "^1.54.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
