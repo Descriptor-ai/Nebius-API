@@ -9,6 +9,7 @@ packages = [{ include = "yandex*", from = "generated" }]
 [tool.poetry.dependencies]
 python = ">=3.9"
 protobuf = ">=v3.20.0"
+grpcio = "^1.56.2"
 
 [tool.poetry.group.dev.dependencies]
 grpcio-tools = "^1.54.0"
